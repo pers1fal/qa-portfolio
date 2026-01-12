@@ -1,4 +1,4 @@
-# 🐞 Login Bug Reports
+#  Login Bug Reports
 
 This document contains **sample bug reports** found during testing of the Login functionality.  
 The bugs demonstrate understanding of **functional, validation, UI, UX, and localization issues**.
