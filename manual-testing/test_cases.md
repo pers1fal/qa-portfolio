@@ -1,8 +1,8 @@
-🧪 Test Cases – Login Functionality
+ Test Cases – Login Functionality
 
 This document contains test cases for Login functionality. The test cases are written to demonstrate QA thinking at Trainee / Junior level.
 
-📌 Test Case Format
+ Test Case Format
 
 TC ID – Unique identifier
 
