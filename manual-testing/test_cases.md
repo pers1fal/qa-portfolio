@@ -1,11 +1,11 @@
-# ✅ Test Cases – Login Functionality
+ Test Cases – Login Functionality
 
 This document contains **manual test cases** for the Login functionality.
 All test cases are written in **Markdown**, so they are clean and readable in **GitHub Preview mode** (not only in edit mode).
 
 ---
 
-## 📌 Test Case Structure
+ Test Case Structure
 
 Each test case includes:
 
