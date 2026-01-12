@@ -1,4 +1,4 @@
-# 🧪 Manual Testing
+#  Manual Testing
 
 This section contains examples of **manual testing artifacts** created as part of my QA practice.
 
@@ -10,7 +10,7 @@ The goal of this module is to demonstrate:
 
 ---
 
-## 📌 Scope of Testing
+##  Scope of Testing
 
 The tested functionality is **Login feature** of a web application.
 
@@ -23,9 +23,9 @@ During testing, the following aspects were covered:
 
 ---
 
-## 📂 Contents
+##  Contents
 
-### ✅ Test Cases
+###  Test Cases
 File: `test_cases.md`
 
 Includes:
@@ -38,7 +38,7 @@ All test cases are written in **Markdown** and structured to be easily readable 
 
 ---
 
-### 🐞 Bug Reports
+###  Bug Reports
 File: `login_bug_reports.md`
 
 Includes:
@@ -64,6 +64,6 @@ Each bug report contains:
 
 ---
 
-## 🎯 Notes
+##  Notes
 
 This manual testing module is part of a larger **QA portfolio** and serves as a foundation for further **test automation practice** using Python.
