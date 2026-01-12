@@ -1,214 +1,159 @@
- Test Cases – Login Functionality
+# ✅ Test Cases – Login Functionality
 
-This document contains test cases for Login functionality. The test cases are written to demonstrate QA thinking at Trainee / Junior level.
+This document contains **manual test cases** for the Login functionality.
+All test cases are written in **Markdown**, so they are clean and readable in **GitHub Preview mode** (not only in edit mode).
 
- Test Case Format
+---
 
-TC ID – Unique identifier
+## 📌 Test Case Structure
 
-Title – Short scenario name
+Each test case includes:
 
-Priority – Business importance
+* **TC ID** – Unique identifier
+* **Title** – Short scenario description
+* **Type** – Positive / Negative
+* **Priority** – Business importance
+* **Severity** – Impact if the test fails
+* **Preconditions** – Conditions before execution
+* **Steps** – Execution steps
+* **Expected Result** – Expected system behavior
 
-Severity – Impact in case of failure
+---
 
-Preconditions – Conditions before execution
+## TC-01: Login with valid credentials
 
-Steps – Execution steps
+**Type:** Positive
+**Priority:** High
+**Severity:** Critical
 
-Expected Result – Expected system behavior
+### Preconditions
 
-TC-01: Login with valid credentials
+* User is on the Login page
+* A valid user account exists in the system
 
-Type: Positive
+### Steps
 
-TC ID: TC-01
-Title: Login with valid credentials
-Priority: High
-Severity: Critical
+1. Open the Login page
+2. Enter a valid username
+3. Enter a valid password
+4. Click the **Login** button
 
-Preconditions:
+### Expected Result
 
-User is on the Login page
+* User is successfully logged in
+* User is redirected to the main/dashboard page
 
-A valid user account exists in the system
+---
 
-Steps:
+## TC-02: Login using Enter key with valid credentials
 
-Open the Login page
+**Type:** Positive
+**Priority:** Medium
+**Severity:** Major
 
-Enter a valid username
+### Preconditions
 
-Enter a valid password
+* User is on the Login page
+* A valid user account exists in the system
 
-Click the Login button
+### Steps
 
-Expected Result:
+1. Open the Login page
+2. Enter a valid username
+3. Enter a valid password
+4. Press the **Enter** key
 
-User is successfully logged in
+### Expected Result
 
-User is redirected to the post-login page
+* User is successfully logged in
+* User is redirected to the main/dashboard page
 
-A successful login message or user dashboard is displayed
+---
 
-TC-02: Login using Enter key with valid credentials
+## TC-03: Login with invalid password
 
-Type: Positive
+**Type:** Negative
+**Priority:** High
+**Severity:** Major
 
-TC ID: TC-02
-Title: Login using Enter key with valid credentials
-Priority: Medium
-Severity: Major
+### Preconditions
 
-Preconditions:
+* User is on the Login page
+* A valid username exists in the system
 
-User is on the Login page
+### Steps
 
-A valid user account exists in the system
+1. Open the Login page
+2. Enter a valid username
+3. Enter an invalid password
+4. Click the **Login** button
 
-Steps:
+### Expected Result
 
-Open the Login page
+* User is not logged in
+* Error message about invalid credentials is displayed
+* User remains on the Login page
 
-Enter a valid username
+---
 
-Enter a valid password
+## TC-04: Login with empty password
 
-Press the Enter key on the keyboard
+**Type:** Negative
+**Priority:** High
+**Severity:** Major
 
-Expected Result:
+### Preconditions
 
-User is successfully logged in
+* User is on the Login page
+* A valid username exists in the system
 
-User is redirected to the post-login page
+### Steps
 
-TC-03: Login with invalid password
+1. Open the Login page
+2. Enter a valid username
+3. Leave the password field empty
+4. Click the **Login** button
 
-Type: Negative
+### Expected Result
 
-TC ID: TC-03
-Title: Login with invalid password
-Priority: High
-Severity: Major
+* User is not logged in
+* Validation or error message is displayed
+* User remains on the Login page
 
-Preconditions:
+---
 
-User is on the Login page
+## TC-05: Login with empty username and password
 
-A valid username exists in the system
+**Type:** Negative
+**Priority:** Medium
+**Severity:** Major
 
-Steps:
+### Preconditions
 
-Open the Login page
+* User is on the Login page
 
-Enter a valid username
+### Steps
 
-Enter an invalid password
+1. Open the Login page
+2. Leave the username field empty
+3. Leave the password field empty
+4. Click the **Login** button
 
-Click the Login button
+### Expected Result
 
-Expected Result:
+* User is not logged in
+* Validation messages are displayed
+* User remains on the Login page
 
-User is not logged in
+---
 
-An error message is displayed indicating invalid credentials
+✅ These test cases demonstrate:
 
-User remains on the Login page
+* Understanding of positive vs negative scenarios
+* Login business logic
+* Priority vs Severity
+* Clear and reproducible test design
 
-TC-04: Login with empty password
-
-Type: Negative
-
-TC ID: TC-04
-Title: Login with empty password
-Priority: High
-Severity: Major
-
-Preconditions:
-
-User is on the Login page
-
-A valid username exists in the system
-
-Steps:
-
-Open the Login page
-
-Enter a valid username
-
-Leave the password field empty
-
-Click the Login button
-
-Expected Result:
-
-User is not logged in
-
-Validation or error message is displayed
-
-User remains on the Login page
-
-TC-05: Login with empty username
-
-Type: Negative
-
-TC ID: TC-05
-Title: Login with empty username
-Priority: Medium
-Severity: Major
-
-Preconditions:
-
-User is on the Login page
-
-Steps:
-
-Open the Login page
-
-Leave the username field empty
-
-Enter a valid password
-
-Click the Login button
-
-Expected Result:
-
-User is not logged in
-
-Validation or error message is displayed
-
-User remains on the Login page
-
-TC-05: Login with empty username and password
-
-Type: Negative
-
-TC ID: TC-05
-Title: Login with empty username and password
-Priority: Medium
-Severity: Major
-
-Preconditions:
-
-User is on the Login page
-
-Steps:
-
-Open the Login page
-
-Leave the username field empty
-
-Leave the password field empty
-
-Click the Login button
-
-Expected Result:
-
-User is not logged in
-
-Validation or error messages are displayed
-
-User remains on the Login page
 
 
 
