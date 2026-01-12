@@ -43,3 +43,59 @@
 - Error message should be clearly readable
 - Text should be fully visible
 - Message should be displayed in Ukrainian
+
+---
+
+### BUG-SC-04: Login button is enabled when required fields are empty
+
+**Severity:** Minor
+**Priority:** Low
+
+## Preconditions:
+
+* User is on the Login page
+
+## Steps to Reproduce:
+
+1. Open the Login page
+2. Leave the username field empty
+3. Leave the password field empty
+
+### Actual Result:
+
+* Login button is enabled and clickable
+
+### Expected Result:
+
+* Login button should be disabled until all required fields are filled
+
+---
+
+###  BUG-SC-05: Error message is not cleared after successful login attempt
+
+**Severity:** Minor
+**Priority:** Low
+
+### Preconditions:
+
+* User is on the Login page
+* User has previously entered invalid credentials
+
+### Steps to Reproduce:
+
+1. Open the Login page
+2. Enter invalid username and password
+3. Click the **Login** button
+4. Observe the error message
+5. Enter valid username and password
+6. Click the **Login** button
+
+### Actual Result:
+
+* User is logged in
+* Previous error message remains visible
+
+### Expected Result:
+
+* User is successfully logged in
+* Error message should be cleared after successful login
