@@ -1,101 +1,128 @@
-### BUG-SC-01 Login works with empty password
-**Severity:** Major 
-**Priority:** High
+BUG-SC-01 Login works with empty password
 
-**Steps to Reproduce:** 
-1. Open login page
-2. Enter valid username
-3. Leave password empty
-4. Click Login
+Severity: Major
+Priority: High
 
-**Actual Result:**    User is logged in
-**Expected Result:**  Error message should be shown
+Preconditions:
 
-### BUG-SC-02 Missing error message after entering invalid credentials on the Login page
-**Severity:** Major  
-**Priority:** Medium  
+User is on the Login page
 
-**Steps to Reproduce:**
-1. Open login page
-2. Enter invalid username
-3. Enter invalid password
-4. Click Login  
+A valid username exists in the system
 
-**Actual Result:** User does not see any error message  
-**Expected Result:** User should see an error message indicating invalid credentials
+Steps to Reproduce:
 
+Open login page
 
-### BUG-SC-03 UI and localization issues in login error message
-**Severity:** Minor  
-**Priority:** Medium  
+Enter valid username
 
-**Steps to Reproduce:**
-1. Open the login page
-2. Enter an incorrect password
-3. Click "Login"
+Leave password empty
 
-**Actual Result:**
-- Error message text has low contrast (light grey on white background)
-- Error message text is partially cut off
-- Error message is displayed in English instead of Ukrainian
+Click Login
 
-**Expected Result:**
-- Error message should be clearly readable
-- Text should be fully visible
-- Message should be displayed in Ukrainian
+Actual Result: User is logged in
+Expected Result: Error message should be shown and user should not be logged in
 
----
+BUG-SC-02 Missing error message after entering invalid credentials
 
-### BUG-SC-04: Login button is enabled when required fields are empty
+Severity: Major
+Priority: Medium
 
-**Severity:** Minor
-**Priority:** Low
+Preconditions:
 
-## Preconditions:
+User is on the Login page
 
-* User is on the Login page
+Steps to Reproduce:
 
-## Steps to Reproduce:
+Open login page
 
-1. Open the Login page
-2. Leave the username field empty
-3. Leave the password field empty
+Enter invalid username
 
-### Actual Result:
+Enter invalid password
 
-* Login button is enabled and clickable
+Click Login
 
-### Expected Result:
+Actual Result: User does not see any error message
+Expected Result: User should see an error message indicating invalid credentials
 
-* Login button should be disabled until all required fields are filled
+BUG-SC-03 UI and localization issues in login error message
 
----
+Severity: Minor
+Priority: Medium
 
-###  BUG-SC-05: Error message is not cleared after successful login attempt
+Preconditions:
 
-**Severity:** Minor
-**Priority:** Low
+User is on the Login page
 
-### Preconditions:
+Application language is set to Ukrainian
 
-* User is on the Login page
-* User has previously entered invalid credentials
+Steps to Reproduce:
 
-### Steps to Reproduce:
+Open the login page
 
-1. Open the Login page
-2. Enter invalid username and password
-3. Click the **Login** button
-4. Observe the error message
-5. Enter valid username and password
-6. Click the **Login** button
+Enter an incorrect password
 
-### Actual Result:
+Click Login
 
-* User is logged in
-* Previous error message remains visible
+Actual Result:
 
-### Expected Result:
+Error message text has low contrast (light grey on white background)
 
-* User is successfully logged in
-* Error message should be cleared after successful login
+Error message text is partially cut off
+
+Error message is displayed in English instead of Ukrainian
+
+Expected Result:
+
+Error message should be clearly readable
+
+Text should be fully visible
+
+Message should be displayed in Ukrainian
+
+BUG-SC-04 Login button is enabled when required fields are empty
+
+Severity: Minor
+Priority: Low
+
+Preconditions:
+
+User is on the Login page
+
+Steps to Reproduce:
+
+Open the Login page
+
+Leave the username field empty
+
+Leave the password field empty
+
+Actual Result: Login button is enabled and clickable
+Expected Result: Login button should be disabled until all required fields are filled
+
+BUG-SC-05 Error message is not cleared after successful login
+
+Severity: Minor
+Priority: Low
+
+Preconditions:
+
+User is on the Login page
+
+User has previously entered invalid credentials
+
+Steps to Reproduce:
+
+Open the Login page
+
+Enter invalid username and password
+
+Click Login
+
+Observe the error message
+
+Enter valid username and password
+
+Click Login
+
+Actual Result: User is logged in, but previous error message remains visible
+Expected Result: User is successfully logged in and the error message should be cleared
