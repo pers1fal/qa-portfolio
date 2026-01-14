@@ -1,3 +1,15 @@
+## 👋 Overview
+
+I am a Junior QA Automation Engineer (Python) with a strong foundation in Manual Testing.
+
+This portfolio showcases my practical experience in:
+- manual testing (test cases and bug reports),
+- UI test automation using Python, Selenium, and Pytest,
+- Page Object Model (POM) architecture,
+- Continuous Integration with GitHub Actions.
+
+The projects below demonstrate my progression from manual QA fundamentals to automated UI testing, following real-world QA workflows and best practices.
+
 # QA Portfolio
 
 This repository serves as a **QA portfolio hub**, showcasing my practical experience in both **Manual Testing** and **QA Automation**.
